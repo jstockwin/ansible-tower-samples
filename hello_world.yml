@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
   vars_files:
-    - secrets.yml
+    - vault.yml
   tasks:
     - name: Hello Message
       debug:
