@@ -1,6 +1,8 @@
 - name: Hello World Sample
   hosts: all
+  vars_files:
+    - secrets.yml
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello Paulo! You are {{ age }}"
+        msg: "Hello {{ secret_name }}!"
