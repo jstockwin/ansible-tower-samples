@@ -1,8 +1,6 @@
 - name: Hello World Sample
   hosts: all
-  vars_files:
-    - vault.yml
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello {{ secret_name }}!"
+        msg: "Hello {{ client_name }}!"
